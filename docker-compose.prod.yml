@@ -1,6 +1,6 @@
 services:
   app:
-    container_name: "laravel-11-mantine-app"
+    container_name: "laravel-12-mantine-app"
     expose:
       - 9000
     volumes:
@@ -31,7 +31,7 @@ services:
     ports:
       - "3306:3306"
     image: mysql:8
-    container_name: "laravel-11-mantine-db"
+    container_name: "laravel-12-mantine-db"
     restart: "no"
     environment:
       MYSQL_DATABASE: ${DB_DATABASE}
